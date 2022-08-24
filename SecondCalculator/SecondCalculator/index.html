@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggle-activeq">
+                <i class="toggle-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display" ></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="clear" id="clear"  onclick="clear_()">C</button></td>
+                        <td><button class="btn-operatord" id="/" onclick="numb(this)">&divide;</button></td>
+                        <td><button class="btn-operatort" id="*" onclick="numb(this)">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace" onclick="erase()"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="7" onclick="numb(this)">7</button></td>
+                        <td><button class="number" id="8" onclick="numb(this)">8</button></td>
+                        <td><button class="number" id="9"onclick="numb(this)">9</button></td>
+                        <td><button class="btn-operator" id="-" onclick="numb(this)">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="4" onclick="numb(this)">4</button></td>
+                        <td><button class="number" id="5" onclick="numb(this)">5</button></td>
+                        <td><button class="number" id="6" onclick="numb(this)">6</button></td>
+                        <td><button class="btn-operator" id="+" onclick="numb(this)">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="number" id="1" onclick="numb(this)">1</button></td>
+                        <td><button class="number" id="2" onclick="numb(this)">2</button></td>
+                        <td><button class="number" id="3" onclick="numb(this)">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal" onclick="answer()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(" onclick="numb(this)">(</button></td>
+                        <td><button class="number" id="0" onclick="numb(this)">0</button></td>
+                        <td><button class="btn-operator" id=")"  onclick="numb(this)" >)</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
